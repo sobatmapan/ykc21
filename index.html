@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="pLGhOe7EqU4-zsAfOnfCV9RLbOvxYYZB17a_HdyydYQ" />
+
+  <title>Kolkata Notes — City Guide, Tips, & Short Reads</title>
+  <meta name="description" content="Catatan ringkas dan panduan kota Kolkata: transportasi, area populer, etika lokal, dan ide itinerary singkat." />
+  <link rel="canonical" href="https://kolkataescortsxx.info/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #070914;
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.08);
+      --line: rgba(255,255,255,.12);
+      --text: rgba(255,255,255,.90);
+      --muted: rgba(255,255,255,.70);
+      --a1: #7c3aed;   /* violet */
+      --a2: #06b6d4;   /* cyan */
+      --a3: #22c55e;   /* green */
+      --shadow: 0 18px 50px rgba(0,0,0,.35);
+      --r: 18px;
+    }
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(900px 500px at 15% -10%, rgba(124,58,237,.22), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(6,182,212,.18), transparent 58%),
+        radial-gradient(800px 450px at 50% 110%, rgba(34,197,94,.10), transparent 55%),
+        var(--bg);
+    }
+    a{ color: inherit; }
+    .container{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    /* Topbar */
+    .topbar{
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7,9,20,.55);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(10px);
+    }
+    .topbar-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding: 12px 0;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-weight: 900;
+      letter-spacing:.3px;
+      font-size: 12px;
+      color: rgba(255,255,255,.85);
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+    }
+    .badge-dot{
+      width:10px;height:10px;border-radius:999px;
+      background: linear-gradient(135deg, var(--a1), var(--a2));
+      box-shadow: 0 8px 18px rgba(124,58,237,.22);
+    }
+    .nav{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .nav a{
+      text-decoration:none;
+      font-weight: 900;
+      font-size: 12px;
+      letter-spacing: .25px;
+      color: var(--muted);
+      padding: 8px 10px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 999px;
+      background: rgba(0,0,0,.16);
+    }
+    .nav a:hover{ color: var(--text); border-color: rgba(255,255,255,.18); }
+
+    /* Header */
+    .site-header{ padding: 42px 0 18px; }
+    .brand{
+      display:flex;
+      align-items:flex-end;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:44px;height:44px;border-radius:16px;
+      background: linear-gradient(135deg, var(--a1), var(--a2));
+      box-shadow: 0 16px 40px rgba(124,58,237,.25);
+    }
+    h1{
+      font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+      margin:0;
+      font-size: clamp(28px, 3.2vw, 46px);
+      line-height:1.05;
+      letter-spacing:.2px;
+    }
+    .subtitle{
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+      max-width: 70ch;
+    }
+
+    /* Cards */
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--r);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .section{ padding: 18px; }
+    @media (min-width: 768px){ .section{ padding: 24px; } }
+
+    h2{
+      font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+      margin: 0 0 10px;
+      font-size: clamp(18px, 2.2vw, 28px);
+    }
+    p{
+      margin: 0 0 12px;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 14.5px;
+    }
+
+    blockquote{
+      margin: 14px 0;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.18);
+      position: relative;
+    }
+    blockquote:before{
+      content:"“";
+      position:absolute;
+      top:-12px; left:10px;
+      font-size: 48px;
+      color: rgba(255,255,255,.16);
+      font-family: ui-serif, Georgia, serif;
+      font-weight: 900;
+    }
+    blockquote p{
+      margin:0;
+      color: rgba(255,255,255,.88);
+      font-weight: 900;
+      padding-left: 22px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 900px){ .grid{ grid-template-columns: 1fr 1fr; } }
+
+    /* Reference links */
+    .links{
+      list-style:none;
+      padding:0;
+      margin: 12px 0 0;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    @media (min-width: 640px){ .links{ grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px){ .links{ grid-template-columns: 1fr 1fr 1fr; } }
+
+    .links li a{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      text-decoration:none;
+      font-weight: 900;
+      letter-spacing: .15px;
+      color: rgba(255,255,255,.90);
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+    }
+    .links li a:after{
+      content:"↗";
+      font-weight: 900;
+      color: rgba(255,255,255,.55);
+    }
+
+    .hr{
+      height:1px;
+      background: rgba(255,255,255,.10);
+      border:0;
+      margin: 18px 0;
+    }
+
+    footer{
+      margin-top: 22px;
+      padding: 18px 0 26px;
+      color: rgba(255,255,255,.55);
+      font-size: 12px;
+      text-align:center;
+      border-top: 1px solid rgba(255,255,255,.10);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="badge"><span class="badge-dot"></span> KOLKATA • CITY NOTES</div>
+        <nav class="nav">
+          <a href="#artikel">Artikel</a>
+          <a href="#referensi">Referensi</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>Kolkata Notes</h1>
+      </div>
+      <p class="subtitle">
+        Catatan ringkas tentang Kolkata: area populer, transportasi, etika lokal, dan ide itinerary singkat yang mudah diikuti.
+      </p>
+    </div>
+  </header>
+
+  <main class="container" style="padding-bottom:26px">
+
+    <section id="artikel" class="card section">
+      <h2>Panduan Cepat Kolkata untuk Pemula</h2>
+
+      <div class="grid">
+        <div class="card section" style="box-shadow:none">
+          <h2 style="font-size:18px;margin-bottom:8px">1) Area yang Enak untuk Mulai</h2>
+          <p>Kalau baru datang, fokus ke area yang ramai dan mudah akses: pusat kota, area sekitar landmark besar, serta lokasi yang dekat transport umum.</p>
+        </div>
+        <div class="card section" style="box-shadow:none">
+          <h2 style="font-size:18px;margin-bottom:8px">2) Transportasi: Praktis & Hemat</h2>
+          <p>Gunakan kombinasi metro/bus/taksi resmi sesuai kebutuhan. Buat rute harian sederhana agar tidak buang waktu berpindah terlalu jauh.</p>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top:12px">
+        <div class="card section" style="box-shadow:none">
+          <h2 style="font-size:18px;margin-bottom:8px">3) Etika Lokal yang Aman</h2>
+          <p>Jaga sopan santun, simpan barang berharga, dan pilih tempat umum untuk meeting/agenda. Kalau ragu, tanya staf hotel atau informasi resmi.</p>
+        </div>
+        <div class="card section" style="box-shadow:none">
+          <h2 style="font-size:18px;margin-bottom:8px">4) Itinerary Singkat 1 Hari</h2>
+          <p>Pagi: jalan santai + sarapan lokal. Siang: museum/galeri. Sore: taman/riverfront. Malam: kuliner ringan dan kembali lebih awal.</p>
+        </div>
+      </div>
+
+      <blockquote>
+        <p>Rencana terbaik: sederhana, realistis, dan mudah diulang.</p>
+      </blockquote>
+    </section>
+
+    <hr class="hr" />
+
+    <section id="referensi" class="card section">
+      <h2>Referensi</h2>
+      <p>Tempel blok link kamu di bawah ini (gunakan <strong>rel="noopener"</strong> sesuai kebutuhanmu).</p>
+
+     <ul class="links">
+  <li><a href="https://datahklotto.us/" target="_blank" rel="noopener">Data HK Lotto</a></li>
+  <li><a href="http://178.128.52.7/" target="_blank" rel="noopener">Data SDY Lotto</a></li>
+  <li><a href="https://pafiairseruk.org/" target="_blank" rel="noopener">Data HK</a></li>
+  <li><a href="http://178.128.89.94/" target="_blank" rel="noopener">Data SGP</a></li>
+  <li><a href="https://pafitanglad.org/" target="_blank" rel="noopener">Data SDY</a></li>
+  <li><a href="https://lamarsalaplayadegandia.com/" target="_blank" rel="noopener">Data HK</a></li>
+  <li><a href="http://159.223.35.146/" target="_blank" rel="noopener">Data SDY Lotto</a></li>
+  <li><a href="https://wholesalejerseys4sale.com/" target="_blank" rel="noopener">Prediksi Keluaran</a></li>
+  <li><a href="https://pafibenermeriahkabupaten.org/" target="_blank" rel="noopener">Prediksi Jitu</a></li>
+  <li><a href="http://178.128.116.128/" target="_blank" rel="noopener">Prediksi SDY</a></li>
+  <li><a href="https://prediksihkpools.net/" target="_blank" rel="noopener">Prediksi HK</a></li>
+  <li><a href="http://178.128.215.158/" target="_blank" rel="noopener">Angkanet</a></li>
+  <li><a href="http://178.128.21.45/" target="_blank" rel="noopener">Angkanet Result</a></li>
+  <li><a href="https://pafipcgunungkidulkab.org/" target="_blank" rel="noopener">Data HK 6D</a></li>
+</ul>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 kolkataescortsxx.info — Notes & Directory
+  </footer>
+
+</body>
+</html>
